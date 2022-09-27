@@ -19,7 +19,7 @@ go: creating new go.mod: module project
 
 create a file called example.go:
 
-#program
+# program
 
 package main
 
