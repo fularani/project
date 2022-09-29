@@ -2,7 +2,7 @@ package db
 
 import(
 	"log"
-	"project/models"
+	// "project/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"fmt"
@@ -28,7 +28,7 @@ func Init() *gorm.DB {
         log.Fatalln(err)
     }
 
-    db.AutoMigrate(&models.Book{})
+    // db.AutoMigrate(&models.Book{})
 
     return db
 }

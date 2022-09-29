@@ -30,6 +30,7 @@ func main(){
 
 	v2 := r.Group("/v2")
 	{
+		v2.GET("/create",h.CreateQuery)
         v2.GET("/books",h.GetAllBooks)
 	    v2.GET("/books/:id",h.GetBook)
 	    v2.POST("/books",h.AddBook)
